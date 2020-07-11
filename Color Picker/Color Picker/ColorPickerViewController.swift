@@ -24,6 +24,8 @@ class ColorPickerViewController: UIViewController {
         super.viewDidLoad()
         pickerView.dataSource = self
         pickerView.delegate = self
+        view.backgroundColor = colorArray[0].screenColor
+        colorLabel.text = colorArray[0].color
     }
     
 }
