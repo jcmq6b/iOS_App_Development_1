@@ -18,8 +18,12 @@ class ColorsViewController: UIViewController, UITableViewDataSource, UITableView
                         Color(name: "purple", uiColor: UIColor.purple),
                         Color(name: "brown", uiColor: UIColor.brown)]
     
+    @IBOutlet weak var colorsTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Colors"
     }
     
      //A function that is called by the table view when it wants to know how many sections the table view has
@@ -43,8 +47,17 @@ class ColorsViewController: UIViewController, UITableViewDataSource, UITableView
          //Because its possible that textLabel could be nil it has to be assigned optional chaining
         cell.textLabel?.text = color.name
         cell.backgroundColor = color.uiColor
+        cell.selectionStyle = .none //Makes it so the selected cell doesn't turn gray
          
          return cell
      }
+    
+    //When user taps on cell the segue occurs
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ColorDetailViewController,
+            let row = colorsTableView.indexPathForSelectedRow?.row {
+            destination.color = color_vars[row]
+        }
+    }
 
 }

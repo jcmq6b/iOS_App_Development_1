@@ -16,6 +16,7 @@
 		5F98A8B524B0193900723E9E /* ColorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F98A8B424B0193900723E9E /* ColorsUITests.swift */; };
 		5F98A8C324B0195C00723E9E /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F98A8C224B0195C00723E9E /* ColorsViewController.swift */; };
 		5FCB95C724D2385800AF7A62 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB95C624D2385800AF7A62 /* Color.swift */; };
+		5FCB95C924D23D0100AF7A62 /* ColorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB95C824D23D0100AF7A62 /* ColorDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		5F98A8B624B0193900723E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F98A8C224B0195C00723E9E /* ColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
 		5FCB95C624D2385800AF7A62 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		5FCB95C824D23D0100AF7A62 /* ColorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				5F98A89224B0193900723E9E /* AppDelegate.swift */,
 				5F98A89424B0193900723E9E /* SceneDelegate.swift */,
+				5FCB95C824D23D0100AF7A62 /* ColorDetailViewController.swift */,
 				5F98A8C224B0195C00723E9E /* ColorsViewController.swift */,
 				5F98A89824B0193900723E9E /* Main.storyboard */,
 				5F98A89B24B0193900723E9E /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 				5F98A89324B0193900723E9E /* AppDelegate.swift in Sources */,
 				5FCB95C724D2385800AF7A62 /* Color.swift in Sources */,
 				5F98A8C324B0195C00723E9E /* ColorsViewController.swift in Sources */,
+				5FCB95C924D23D0100AF7A62 /* ColorDetailViewController.swift in Sources */,
 				5F98A89524B0193900723E9E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
